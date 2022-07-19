@@ -1,0 +1,17 @@
+.navbar{
+    position: relative;
+    top: 70px;
+    box-shadow: 0 0 5px 5px rgb(250, 233, 3);
+    color: gold;
+    border: 2px solid #000;
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 30px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
