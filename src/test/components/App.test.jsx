@@ -1,5 +1,5 @@
-import {render,screen,fireEvent} from "@testing-library/react";
-import { App } from "../../App";
+import {render,screen} from "@testing-library/react";
+import { App,handleAddCategory } from "../../App";
 
 describe("<App/>", () => {
 
@@ -20,5 +20,11 @@ describe("<App/>", () => {
 
   });
 
-  
+  test('Verificar Estado inicial', () => { 
+    screen.debug()
+    expect(screen.getByText('GIF APP')).toBeInTheDocument();
+    expect(screen.getByTestId('inputText').value).toBe('');
+    expect(screen.getByTestId('inputNumber').value).toBe('0');
+    expect(screen.getByTestId('btnReset')).toBeInTheDocument();
+  })
 });
