@@ -5,20 +5,15 @@ import { useState } from "react";
 import { PropTypes } from 'prop-types';
 
 export const AgregarCategoria = ({ agregar,cantidad }) => {
-  {
+
     /*USESTATES*/
-  }
   const [inputValue, setInputValue] = useState("");
 
   const [inputCantidad, setInputCantidad] = useState(0);
 
-  {
     /*FUNCIONES*/
-  }
 
-  {
     /*CAPTURANDO VALOR DEL INPUT*/
-  }
   const handleInputChange = ({ target }) => {
     setInputValue(target.value);
   };
@@ -27,9 +22,8 @@ export const AgregarCategoria = ({ agregar,cantidad }) => {
     setInputCantidad(target.value);
   };
 
-  {
     /*ENVIANDO VALOR DEL INPUT*/
-  }
+
   const handleOnSubmit = (e) => {
     e.preventDefault();
     if (inputValue.trim().length < 1) return;

@@ -8,26 +8,27 @@ import { BotonReset } from './components/BotonReset';
 
 export const App = () => {
 
-  {/*USESTATES*/}
+  /*USESTATES*/
   const [categorias, setCategorias] = useState([]);
 
   const [cantidad, setCantidad] = useState(0);
 
-  {/*FUNCIONES*/}
+  /*FUNCIONES*/
 
-  {/*AGREGAR CATEGORIA*/}
+  /*AGREGAR CATEGORIA*/
   const handleAddCategory = (categoria)=>{
     setCategorias([categoria,...categorias]);
   }
 
-  {/*ELIMINAR CATEGORIA*/}
+
+  /*ELIMINAR CATEGORIA*/
   const handleRemoveCategory = (categoria)=>{
     setCategorias(categorias.filter((ct) => ct !== categoria));
   }
 
-  {/*RESETEAR*/}
+  /*RESETEAR*/
   const handleResetCategorys = ()=>{
-    setCategorias(categorias.filter((categoria) => categoria !== categoria));
+    setCategorias([]);
   }
 
   return (

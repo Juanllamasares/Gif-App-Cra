@@ -5,9 +5,9 @@ import { Gif } from "./Gif";
 import { PropTypes } from 'prop-types'
 
 export const Categoria = ({ categoria, borrar, cantidad }) => {
-  {
+  
     /*LLAMANDO A LA FUNCION FETCHAPI*/
-  }
+  
   const { imagenes, loading } = useFetchApi(categoria, cantidad);
   
   loading?document.body.style.cursor='wait':document.body.style.cursor='';

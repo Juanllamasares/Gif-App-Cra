@@ -9,9 +9,9 @@ export const Gif = ({ title, url, id }) => {
 
   const [state, setState] = useState(false);
 
-  {
+  
     /*FUNCION DESCARGAR GIF*/
-  }
+  
   const handleDownload = (url) => {
     var xhr = new XMLHttpRequest();
     xhr.open("GET", url, true);
