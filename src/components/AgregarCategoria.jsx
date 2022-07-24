@@ -27,7 +27,7 @@ export const AgregarCategoria = ({ agregar,cantidad }) => {
   const handleOnSubmit = (e) => {
     e.preventDefault();
     if (inputValue.trim().length < 1) return;
-    if (inputCantidad===0) return;
+    if (inputCantidad === 0) return;
     cantidad(inputCantidad);
     agregar(inputValue.trim());
     setInputCantidad(0);
@@ -58,6 +58,7 @@ export const AgregarCategoria = ({ agregar,cantidad }) => {
       </form>
     </div>
   );
+
 };
 
 AgregarCategoria.propTypes = {
